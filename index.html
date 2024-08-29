@@ -3,74 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China Tips</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #ff4d4d;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>China Tips - Apostas Desportivas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>China Tips</h1>
+        <div class="logo">
+            <h1>China Tips</h1>
+            <p>O seu guia de apostas desportivas</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#dicas">Dicas de Apostas</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Dicas</a>
-        <a href="#">Contato</a>
-    </nav>
-
-    <div class="container">
+    <section id="inicio" class="banner">
         <h2>Bem-vindo ao China Tips</h2>
-        <p>Aqui você encontra as melhores dicas sobre apostas desportivas, desde futebol, ténis, até Hóquei.</p>
-        <p>Explore nossos conteúdos e descubra tudo o que você precisa saber para aproveitar ao máximo a sua experiência na China!</p>
-    </div>
+        <p>Especialistas em previsões e dicas para apostas desportivas</p>
+        <a href="#dicas" class="cta-button">Veja as Dicas de Hoje</a>
+    </section>
+
+    <section id="dicas" class="content-section">
+        <h2>Dicas de Apostas</h2>
+        <div class="tips-grid">
+            <div class="tip-item">
+                <h3>Futebol</h3>
+                <p>Previsões e análises para as melhores ligas de futebol ao redor do mundo.</p>
+                <a href="#">Ver Dicas de Futebol</a>
+            </div>
+            <div class="tip-item">
+                <h3>Basquete</h3>
+                <p>As melhores apostas para a NBA e outras ligas importantes de basquete.</p>
+                <a href="#">Ver Dicas de Basquete</a>
+            </div>
+            <div class="tip-item">
+                <h3>Ténis</h3>
+                <p>Análises detalhadas para os principais torneios de ténis.</p>
+                <a href="#">Ver Dicas de Ténis</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="artigos" class="content-section">
+        <h2>Artigos Recentes</h2>
+        <div class="articles-grid">
+            <article>
+                <h3>Estratégias de Apostas em Futebol</h3>
+                <p>Descubra as melhores estratégias para aumentar suas chances de sucesso nas apostas em futebol.</p>
+                <a href="#">Leia Mais</a>
+            </article>
+            <article>
+                <h3>Como Gerenciar seu Banca</h3>
+                <p>Aprenda a gerenciar sua banca de apostas de forma eficiente e evitar perdas desnecessárias.</p>
+                <a href="#">Leia Mais</a>
+            </article>
+            <article>
+                <h3>Entendendo as Odds</h3>
+                <p>Saiba como funcionam as odds e como elas podem impactar seus ganhos nas apostas.</p>
+                <a href="#">Leia Mais</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contato" class="content-section">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida ou quer compartilhar suas experiências? Fale conosco!</p>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2024 China Tips. Todos os direitos reservados.</p>
