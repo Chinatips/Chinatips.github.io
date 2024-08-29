@@ -3,12 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - China Tips</title>
+    <title>China Tips - Início</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .banner img {
+            width: 150px;
+        }
+        nav {
+            background-color: #444;
+        }
+        nav ul.menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul.menu li {
+            position: relative;
+        }
+        nav ul.menu li a {
+            color: #fff;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav ul.menu li a:hover {
+            background-color: #555;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-menu li a {
+            padding: 10px;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+        .content-box h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="banner">
+            <img src="logo.png" alt="Logotipo China Tips"> <!-- Adicione aqui o logotipo -->
             <h1>China Tips</h1>
             <p>O seu guia de apostas desportivas</p>
         </div>
@@ -42,8 +130,41 @@
     </header>
 
     <section class="content-section">
-        <h2>Bem-vindo ao China Tips!</h2>
-        <p>O seu guia completo para apostas desportivas. Explore nossas seções para aprender sobre apostas, odds, gestão de banca e muito mais.</p>
+        <div class="content-box">
+            <h2>Apostas Desportivas</h2>
+            <p>Descubra tudo sobre apostas desportivas, desde o básico até estratégias avançadas.</p>
+            <a href="o-que-sao-apostas.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Odds</h2>
+            <p>Entenda como funcionam as odds e como usá-las para fazer apostas mais informadas.</p>
+            <a href="odds.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Iniciantes</h2>
+            <p>Guias e dicas para quem está começando no mundo das apostas.</p>
+            <a href="iniciante.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Experientes</h2>
+            <p>Estratégias e técnicas avançadas para apostadores experientes.</p>
+            <a href="experientes.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Handicap</h2>
+            <p>Aprenda sobre as apostas com handicap e como utilizá-las em suas apostas.</p>
+            <a href="handicap.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Casas de Apostas</h2>
+            <p>Conheça as melhores casas de apostas disponíveis em Portugal.</p>
+            <a href="casas-de-apostas.html">Saiba Mais</a>
+        </div>
+        <div class="content-box">
+            <h2>Guias</h2>
+            <p>Tutoriais e guias úteis para ajudá-lo a começar e aproveitar ao máximo suas apostas.</p>
+            <a href="guias.html">Saiba Mais</a>
+        </div>
     </section>
 
     <footer>
